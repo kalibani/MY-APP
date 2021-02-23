@@ -1,0 +1,36 @@
+// Dashboard Component
+// --------------------------------------------------------
+
+import React from 'react';
+import PropTypes from 'prop-types';
+import logo from 'assets/images/logo.svg';
+import './styles.scss';
+
+const Dashboard = ({ propsName }) => (
+  <div className="App">
+    <header className="App-header">
+      <img src={logo} className="App-logo" alt="logo" />
+      <p>
+        Edit <code>src/App.js</code> and save to reload.
+      </p>
+      <a
+        className="App-link"
+        href="https://reactjs.org"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Learn React
+      </a>
+    </header>
+  </div>
+);
+
+Dashboard.propTypes = {
+  propsName: PropTypes.string
+};
+
+Dashboard.defaultProps = {
+  propsName: ''
+};
+
+export default Dashboard;
